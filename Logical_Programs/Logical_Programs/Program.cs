@@ -9,6 +9,7 @@
             Console.WriteLine("2 for a reverse number");
             Console.WriteLine("3 for a Prime Number7");
             Console.WriteLine("4 for a Fibonacci series");
+            Console.WriteLine("5 for a stop watch");
             int hammer = Convert.ToInt32(Console.ReadLine());
             switch (hammer)
             {
@@ -16,7 +17,7 @@
                     Perfect_Number logic = new Perfect_Number();
                     logic.Perfectnum();
                     break;
-                    case 2:
+                case 2:
                     Reverse_Number reverse = new Reverse_Number();
                     reverse.FindReverseNum();
                     break;
@@ -28,10 +29,12 @@
                     Fibonacci_Series series = new Fibonacci_Series();
                     series.fibo_series();
                     break;
-
+                case 5:
+                    StopWatch watch = new StopWatch();
+                    watch.stopwatch();
+                    break;
             }
-           
-           
+                     
         }
     }
 
