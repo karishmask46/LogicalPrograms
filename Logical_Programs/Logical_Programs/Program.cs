@@ -6,12 +6,17 @@
         {
             Console.WriteLine("Enter a number for Perfect Number:");
             Console.WriteLine("1 for a perfect number");
+            Console.WriteLine("2 for a reverse number");
             int hammer = Convert.ToInt32(Console.ReadLine());
             switch (hammer)
             {
                 case 1:
                     Perfect_Number logic = new Perfect_Number();
                     logic.Perfectnum();
+                    break;
+                    case 2:
+                    Reverse_Number reverse = new Reverse_Number();
+                    reverse.FindReverseNum();
                     break;
 
             }
